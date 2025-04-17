@@ -170,7 +170,8 @@ class BayesClassifier:
 
         # for debugging purposes, it may help to print the overall positive and negative
         # probabilities
-        # print(pos_score, neg_score)
+        print(f"Positive Probability: {pos_score}")
+        print(f"Negative Probability: {neg_score}")
 
         # determine whether positive or negative was more probable (i.e. which one was
         # larger)
@@ -318,7 +319,9 @@ if __name__ == "__main__":
     print("\nThe following should all be negative.")
     print(b.classify('rainy days are the worst'))
     print(b.classify('computer science is terrible'))
+    print(b.classify("Summer break is almost here.  I am super excited and I know that it's going to be the best"))
+
     print()
     
     print(b.classify("No way should this have beaten Traffic for best movie."))
-    pass
+    pass 
